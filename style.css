@@ -1,0 +1,154 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  margin: 0;
+}
+
+#display {
+  width: 370px;
+  height: 90px;
+  text-align: right;
+  font-size: 32px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #fff8b1;
+  color: #222;
+  font-weight: bold;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  width: 370px;
+}
+
+.btn {
+  width: 100%;
+  height: 70px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+  background: #3498db;
+  box-shadow: 0 4px 0 #31404d;
+}
+
+#zero:hover,
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover,
+#five:hover,
+#six:hover,
+#seven:hover,
+#eight:hover,
+#nine:hover {
+  background: #0e995f;
+}
+
+#addition,
+#sub,
+#multi,
+#division,
+#floor,
+#modulo {
+  background: #e94560;
+  box-shadow: 0 4px 0 #5c2830;
+}
+
+#addition:hover,
+#sub:hover,
+#multi:hover,
+#division:hover,
+#floor:hover,
+#modulo:hover {
+  background: #ff5c75;
+}
+
+#clear {
+  background: #f5a623;
+  box-shadow: 0 4px 0 #4d3a1c;
+}
+
+#clear:hover {
+  background: #ffbb3f;
+}
+
+#equal {
+  background: #00b894;
+  box-shadow: 0 4px 0 #1b5f53;
+}
+
+#equal:hover {
+  background: #00d1a0;
+}
+
+#sqrt {
+  background: #8e44ad;
+  box-shadow: 0 4px 0 #311b3b;
+}
+
+#sqrt:hover {
+  background: #a55eea;
+}
+
+#power {
+  background: #ff6f61;
+  box-shadow: 0 4px 0 #3d1c19;
+}
+
+#power:hover {
+  background: #ff8c7a;
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+@media (max-width: 450px) {
+  #display {
+    width: 90%;
+  }
+
+  div {
+    width: 90%;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .btn {
+    height: 60px;
+    font-size: 20px;
+  }
+}
